@@ -1,0 +1,19 @@
+Write a program that keeps a record of payments. Each payment includes a currency and an amount. The program should output a list of all the currency and amounts to the console once per minute. The input can be typed into the command line, and optionally also be loaded from a file when starting up.
+Sample input:
+USD 1000
+HKD 100
+USD -100
+RMB 2000
+HKD 200
+Sample output:
+USD 900
+RMB 2000
+HKD 300
+Detailed requirements:
+The user can enter more lines into the console by typing a currency and amount and pressing enter.  Once per minute, the output showing the net amounts of each currency should be displayed.  If the net amount is 0, that currency should not be displayed.  When the user types "quit", the program should exit.
+You may need to make some assumptions.  For example, if the user enters invalid input, you can choose to display an error message or quit the program.  For each assumption you make, write it down in a readme.txt and include it when you submit the project.
+Things you may consider using:
+•	Unit testing
+•	Threadsafe code
+•	Programming patterns
+Push your code to github.  We should be able to build and run your program easily using maven.  Please include instructions on how to build and run your program.
